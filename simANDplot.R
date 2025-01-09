@@ -1,5 +1,13 @@
 #BD project 2 fuctions
 #Christopher Hall 1aug23
+install.packages('BiocManager')
+install.packages('devtools')
+BiocManager::install('flowCore')
+devtools::install_github('hally166/flowSpectrum')
+
+library(flowCore)
+library(flowSpectrum)
+
 similarityANDplotter<-function(fSet,maxchnl,negCTRL){
   #select pos events
   gate <- openCyto::gate_mindensity(fSet, channel = maxchnl) # fr is a flowFrame

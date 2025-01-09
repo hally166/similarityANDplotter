@@ -7,3 +7,5 @@ flowSpectrum is called so needs installing if you don't know the max channel.
 
 devtools::install_github('hally166/flowSpectrum')
 
+![alt text](https://github.com/hally166/similarityANDplotter/blob/main/AF.png)
+
